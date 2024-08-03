@@ -1,150 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart Clone</title>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="icon" href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" type="image/png">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flipkart</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link rel="icon" href="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png" type="image">
+	<link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <div class="Navbar" style=" background-color: white; font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;" height="100px">
-        <div id="logo">
-         <div style="background-color: transparent; border: none;">
+	<!-- For Navgation Bar -->
+	<section id="navbar">
+
+		<div id="img">
+			<img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" style="margin-right: 36px;">
+		</div>
+				
+		  <div id="searchbar">
+				
+				<i class="fa-solid fa-magnifying-glass" id="searchicon" style="margin-left: 7px; margin-right: 7px; margin-top: 7px; margin-bottom: 7px;"></i>
+				
+				<input type="text" placeholder="Search for Products, Brands and More" id="search">
+				
+			
+			</div>
+		
+		  <div id="login">	
+			  
+				<i class="fa-regular fa-circle-user" style="margin-right: 8px; margin-left: 8px;"></i>
+				<a class="name">Login</a>
+				<i id="an" class="fa-solid fa-angle-down" style="margin-left: 5px; height: 12px; width: 12px;"></i>
+			 
+
+		  </div>
+			
+		  <div id="cart">
+				<i class="fa-solid fa-cart-shopping"></i>
+				<a class="name">Cart</a>
+		   </div>
+			
+		   <div id="seller">
+				<i class="fa-solid fa-store"></i>
+				<a class="name">Become a Seller</a>
+		   </div>
+
+		   <i class="fa-solid fa-ellipsis-vertical" id="menu"></i>
+		
+	</section>
+
+	<!-- For items -->
+	<section id="items">
+
+		<div id="grocery" class="products">
+			<img id="groceryicon" class="productsIcons" src="https://rukminim2.flixcart.com/flap/96/96/image/29327f40e9c4d26b.png?q=100">
+			<span style="margin-top: 8px;">Grocery</span>
+		</div>
+
+		<div id="mobiles" class="products">
+			<img id="mobilesicon" class="productsIcons" src="https://rukminim2.flixcart.com/flap/96/96/image/22fddf3c7da4c4f4.png?q=100">
+			<span style="margin-top: 8px;">Mobiles</span>
+		</div>
+
+		<div id="fashion" class="products">
+			<img id="fashionicon" class="productsIcons" src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/0d75b34f7d8fbcb3.png?q=100">
+			<div class="arw">
+				<span>Fashion</span>
+				<i class="fa-solid fa-angle-up" id="arwicon"></i>
+			</div>	
+		</div>
+
+		<div id="electronic" class="products">
+			<img id="electronicicon" class="productsIcons" src="https://rukminim2.flixcart.com/flap/96/96/image/69c6589653afdb9a.png?q=100">
+			<div class="arw">
+				<span>Electronic</span>
+				<i class="fa-solid fa-angle-up" id="arwicon"></i>
+			</div>	
+		</div>
+
+		<div id="homeFurniture" class="products">
+			<img id="home&Ficon" class="productsIcons" src="https://rukminim2.flixcart.com/flap/96/96/image/ab7e2b022a4587dd.jpg?q=100">
+			<div class="arw">
+		    	<span>Home & Furniture</span>
+		    	<i id="arwicon" class="fa-solid fa-angle-up"></i>
+			</div>	
+		</div>
+
+		<div id="appliance" class="products">
+			<img id="appliicon" class="productsIcons" src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/0139228b2f7eb413.jpg?q=100">
+			<span style="margin-top: 18px;">Appliance</span>
+		</div>
+
+		<div id="travel" class="products">
+			<img id="travlicon" class="productsIcons" src="https://rukminim2.flixcart.com/flap/96/96/image/71050627a56b4693.png?q=100">
+			<span style="margin-top: 8px;">Travel</span>
+		</div>
+
+		<div id="beautyTM" class="products">
+			<img id="beautyT&Micon" class="productsIcons" src="https://rukminim2.flixcart.com/flap/96/96/image/dff3f7adcf3a90c6.png?q=100">
+			<div class="arw">
+		    	<span>Beauty, Toys & More</span>
+		    	<i class="fa-solid fa-angle-up" id="arwicon"></i>
+			</div>	
+		</div>
+
+		<div id="twoWheelers" class="products">
+			<img id="twowicon" class="productsIcons" src="https://rukminim2.flixcart.com/fk-p-flap/96/96/image/05d708653beff580.png?q=100">
+			<div class="arw">
+		    	<span>Two Wheelers</span>
+		    	<i class="fa-solid fa-angle-up" id="arwicon"></i>
+			</div>	
+		</div>	
+	</section>
+
+	<!-- For Ads-->
+	<section id="ads">
+		<i class="fa-solid fa-chevron-left"></i>
+		<div>
+			<img id="adspic1" src="https://rukminim2.flixcart.com/fk-p-flap/1600/270/image/1b011c536d905180.jpg?q=90">
+		</div>
+		<i class="fa-solid fa-chevron-right"></i>
+	</section>
+
+
+	<!-- For Best Electronics -->
+	<section id="bestEle">
+		<div>
+		<div id="bsttxt">
+			<span><b>Best Electronics</b></span>
+			<div id="iconR">
+				<i class="fa-solid fa-chevron-right"></i>
+			</div>	
+		</div>
+
+		<div id="itembst">
+		<div id="bsthp" class="bst">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/210/210/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=90">
+			
+			<div>
+				<span style="width: 185px; height: 20px; text-align: center;" >Best Truewirless Headphones</span>
+				
+				<div style="text-align: center;">
+					<span><b>Grab Now</b></span></div>
+				</div>	
+		   </div>
+
+		<div  class="bst"  id="bstss">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/210/210/kvr01ow0/security-software/l/d/e/quick-heal-original-imag8kpmjygxhzgh.jpeg?q=90" width="117px" height="170px">
+			<span style="text-align: center;">Best Selling Security Softwares</span>
+
+			<div style="text-align: center;">	
+				<span><b>From ₹499*</b></span>	
+			</div>	
+
+		</div>
+
+		<div class="bst"   id="bstns">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/flap/210/210/image/24ed491dc3ff9e8a.jpg?q=90" height="170px" width="170px">
+			<span style="text-align: center;">Noise Smartwatchs</span>
+
+			<div style="text-align: center;">
+				<span><b>From ₹1,649</b></span>
+			</div>
+
+		</div>
+
+		<div class="bst"  id="bstproj">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/210/210/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=90" width="170px" height="128px">
+			<span style="text-align: center;">Projectors</span>
+			
+			<div style="text-align: center;">
+				<span><b>From ₹229</b></span>
+			</div>
+				
+		</div>
+
+		<div class="bst"  id="bstbs">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/210/210/xif0q/smartwatch/q/v/q/-original-imagn53zhtyzh4tn.jpeg?q=90" width="142px" height="170px">
+			<span style="text-align: center;">boAt Smartwatchs</span>
+
+			<div style="text-align: center;">
+				<span><b>From ₹1099</b></span>
+			</div>	
+		</div>
+
+		<div style="margin-top: 21vh;">
+			<i class="fa-solid fa-chevron-right"></i>
+		</div>
+		
+	   </div>
+		</div>
+
+	   <div id="ads2">
+			<img src="https://rukminim2.flixcart.com/fk-p-flap/530/810/image/131c8c7ecafd87e5.jpg?q=90" width="191px" height="270px" >
+	</div>
+
+	</section>
+
+	<!-- for products sec2 -->
+	<section id="beautyFTM">
+
+		<div id="title">
+			<span><b>Beauty, Food, Toys & more</b></span>
+			<div id="iconR">
+				<i class="fa-solid fa-chevron-right"></i>
+		    </div>	
+		</div>	
+
+		<div id="itembst">
+		<div class="bst">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/170/170/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=90">
+			<div style="text-align: center;">
+		 		<span>Geared Cycles</span>
+				<div>
+		 			<span><b>Up to 70% Off</b></span>
+				</div>	
+			</div>
+		</div>
+
+		<div class="bst">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/170/170/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=90">
+			<div style="text-align: center;">
+				<span>Best of Action Toys</span>
+				<div>
+					<span><b>Up to 70% Off</b></span>
+				</div>	
+			</div>	
+		</div>
+
+		<div class="bst">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/170/170/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=90">
+			<div style="text-align: center;">
+				<span>Remote Control Toys</span>
+				<div>
+					<span><b>Up to 80% Off</b></span>
+				</div>	
+			</div>	
+		</div>
+
+		<div class="bst">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/170/170/k6fd47k0/nut-dry-fruit/p/z/7/200-100-natural-california-pouch-happilo-original-imafzvw2tcazeur6.jpeg?q=90">
+			<div style="text-align: center;">
+				<span>Dry Fruits</span>
+				<div>
+					<span><b>Upto 75% Off</b></span>
+				</div>	
+			</div>	
+		</div>
+
+		<div class="bst">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/170/170/kdbzqfk0/bar/8/h/q/push-up-bar-0-8-long-ankaro-original-imafu9dmvdk3rzvy.jpeg?q=90">
+			<div style="text-align: center;">
+				<span>Gym Essentials</span>
+				<div>
+					<span><b>From ₹139</b></span>
+				</div>	
+			</div>	
+		</div>
+
+		<div class="bst">
+			<img class="imgsize" src="https://rukminim2.flixcart.com/image/170/170/xif0q/microphone/v/o/w/wireless-lapel-microphone-for-youtube-vlogging-recording-for-original-imagpx8grmb7znhh.jpeg?q=90">
+			<div style="text-align: center;">
+				<span>Microphones</span>
+				<div>
+				<span><b>Up to 70% off</b></span>
+				</div>
+			</div>	
+		</div>
+	   </div>
+	</section>
+	
+	<!-- for Monsoon Esse.... -->
+	<section >
+
+	<div style="display: flex;">	
+		<div id="monEsseProduct">
+			<div id="bsttxt">
+				<span><b>Mosoon Essentials</b></span>
+				<div id="iconR">
+					<i class="fa-solid fa-chevron-right"></i>
+				</div>	
+			</div>	
+
+			<div id="monEsse" class="monEsee">
+				<div class="monPro" style="margin-left: 15px;">
+					<img class="imgsize" src="https://rukminim2.flixcart.com/image/240/240/l3vxbbk0/slipper-flip-flop/u/9/i/8-diamond-1-mehandi-diamond-1-black-evok-mehandi-black-original-imagewkb3rmxggfm.jpeg?q=90">
+					<div  >
+						<span>Men’s Slippers & Flip Flops</span>
+						<div>
+							<span style="color: rgb(1, 117, 1); font-size: medium;">Min. 70% Off</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="monPro">
+					<img class="imgsize" src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/m/c/s/-original-imagztn7sycc4h84.jpeg?q=90">
+					<div  >
+						<span>Mobiles</span>
+						<div>
+							<span style="color: rgb(1, 117, 1); font-size: medium;">Min. 50% Off</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="monEsse"  class="monEsee">
+				<div class="monPro" style="margin-left: 15px;">
+					<img class="imgsize" src="https://rukminim2.flixcart.com/image/240/240/l3vxbbk0/slipper-flip-flop/u/9/i/8-diamond-1-mehandi-diamond-1-black-evok-mehandi-black-original-imagewkb3rmxggfm.jpeg?q=90">
+					<div  >
+						<span>Men’s Slippers & Flip Flops</span>
+						<div>
+							<span style="color: rgb(1, 117, 1);  font-size: medium;">Min. 70% Off</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="monPro">
+					<img class="imgsize" src="https://rukminim2.flixcart.com/image/240/240/xif0q/mobile/m/c/s/-original-imagztn7sycc4h84.jpeg?q=90">
+					<div>
+						<span>Mobiles</span>
+						<div>
+							<span style="color: rgb(1, 117, 1); font-size: medium;">Min. 50% Off</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+		</div>	
+		<div>
+			<img src="https://rukminim2.flixcart.com/www/1070/790/promos/26/09/2023/ed27f892-1bc6-462f-805b-953f5add4f6a.jpg?q=90" style="width: 68.6vw; height: 545px;">
+		</div>
+	</div>	
+	</section>
+
+	<!-- for 3-Column-->
+	<section>
+		<!-- Column No.: 1 -->
+		<div>
+			<div id="secSize">
+				<div id="bsttxt">
+					<span><b>Best of Health & Wellness</b></span>
+					<div id="iconR">
+						<i class="fa-solid fa-chevron-right"></i>
+					</div>	
+				</div>
+				
+				<div id="sec">
+					<div class="secBorder">
+						<img class="imgsize" src="https://rukminim2.flixcart.com/image/240/240/xif0q/shoe/r/e/m/-original-imagsfdvuffvqx4x.jpeg?q=90">
+						<div>
+							<span>Men’s Sports Shoes</span>
+							<div>
+								<span>Min. 70% Off</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="secBorder">
+						<img class="imgsize" src="https://rukminim2.flixcart.com/image/240/240/xif0q/bottle/k/w/o/1000-summer-cool-single-wall-stainless-steel-fridge-water-bottle-original-imahfsfbup9r7esu.jpeg?q=90">
+						<div>
+							<span>Water Bottles & Flasks</span>
+							<div>
+								<span>Special offer</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="sec">
+					<div class="secBorder">
+						<img class="imgsize" src="https://rukminim2.flixcart.com/image/240/240/xif0q/smartwatch/w/o/t/-original-imagxp8thk2pbaqa.jpeg?q=90">
+						<div>
+							<span>Smart Watches</span>
+							<div>
+								<span>Min. 40% Off</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="secBorder">
+						<img class="imgsize" src="https://rukminim2.flixcart.com/image/240/240/xif0q/shopsy-protein-supplement/x/p/z/weight-gainers-mass-gainers-advance-weight-gainer-advanced-original-imagy546gzubstdr.jpeg?q=90">
+						<div>
+							<span>Protein Supplement</span>
+							<div>
+								<span>Min. 50% Off</span>
+							</div>
+						</div>
+					</div>
+				</div>
+                 
+			</div>	
             <div>
-        <source srcset="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" media="(min-width:767px)">
-      </div>
-      <div>
-        <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" width="160" height="40" title="Flipkart">
-      </div>
-      </div>
-       <div id="searchbar" style=" height: 40px;width: 490px;background-color: #f0f5ff;">
-       <img height="24px" width="24px"  style="margin-bottom: 0px;margin-left: 8px;margin-right: 8px; border: none;background-color: transparent;"id="seachicon" src="https://img.icons8.com/?size=50&id=7eX13e1GI7bn&format=gif">
-       <input class="input" type="text" placeholder="Search for products,Brands and more" id="search" width="490px" height="40px" style="padding-right: 20px; font-size: 17px;border: none;background-color: transparent;">
-    </div>
-    <div id="login">
-       <img src="https://img.icons8.com/?size=80&id=KGfitZgTwrZL&format=png" height="35px" style="margin-right: 5px;">
-       <span style="margin-right: 5px; text-decoration: none;">Login</span>
-       <img src="https://img.icons8.com/?size=30&id=60662&format=png">
-    </div>
-    <div id="cart" href="#">
-      <a style="cursor: pointer;">
-       <img src="https://img.icons8.com/?size=50&id=9671&format=png" height="24px" style="margin-right: 5px; width: 30px;">
-       <span>Cart</span>
-      </a>
-    </div>
-    <div id="Seller" style="cursor: pointer;">
-       <img src="https://img.icons8.com/?size=80&id=q17y7KhZDHBN&format=png" height="30px" style="margin-right: 5px;">
-       <span>Become a Seller</span>
-    </div>
-       <img id="menu" style src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg" style="text-align:right";>
-    </div>
-    </div>
-
-   <section>
-      <div id="product">
-         <div style="display: flex;justify-content:space-evenly;align-items: stretch;">
-         <div >
-            <img src="https://rukminim1.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" style="height: 64px;width: 64px; margin-top: 12px;">
-            <h5 style="margin-top: 0px;">Grocery</h5>
-         </div>
-         <div>
-            <img src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100">
-            <h5 style="margin-top: 0px;">Mobiles</h5>
-         </div>
-         <div>
-            <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100">
-            <div id="Fashion"><h5 style="margin-top: 0px;">Fashion</h5>
-            <img src="https://img.icons8.com/?size=30&id=60662&format=png" id="fash" height="16.8" width="16.8"></div>
-         </div>
-         <div>
-            <img src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100">
-            <div style="display: flex;justify-content: space-around;"><h5 style="margin-top: 0px;">Electronics</h5>
-            <img src="https://img.icons8.com/?size=30&id=60662&format=png" height="16.8" width="16.8"></div>
-         </div>
-         <div>
-            <img src="https://rukminim1.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100">
-            <div style="display: flex;justify-content: space-around;"><h5 style="margin-top: 0px;">Home&
-               Furniture</h5>
-               <img src="https://img.icons8.com/?size=30&id=60662&format=png" height="16.8" width="16.8"></div>
-            
-         </div>
-         <div>
-            <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0139228b2f7eb413.jpg?q=100">
-            <h5 style="margin-top: 0px;"> Appliances</h5>
-         </div>
-         <div>
-            <img src="https://rukminim1.flixcart.com/flap/80/80/image/71050627a56b4693.png?q=100">
-            <h5 style="margin-top: 0px;">Travel</h5>
-         </div>
-         <div>
-            <img src="https://rukminim1.flixcart.com/flap/80/80/image/dff3f7adcf3a90c6.png?q=100">
-           <div style="display: flex;justify-content: space-around;"><h5 style="margin-top: 0px;">Beauty,Toys & More</h5>
-            <img src="https://img.icons8.com/?size=30&id=60662&format=png" height="16.8" width="16.8"></div>
-         </div>
-         <div>
-            <img src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/05d708653beff580.png?q=100">
-            <div style="display: flex;justify-content: space-around;"><h5 style="margin-top:0px;margin-right: 5px; ">Two Wheelers</h5>
-            <img src="https://img.icons8.com/?size=30&id=60662&format=png" height="16.8" width="16.8"></div>
-         </div>
-      </div>
-      </div>
-   </section>
-
-   <section>
-      <div class="Slide" >
-         <div id="image">
-            <img src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4373e1bc9ffd7daa.jpeg?q=80" height="258.1px" width="1365px">
-         </div>
-      </div>
-   </section>
-
-   <section>
-      <div class="Electronics">
-         <div>
-            <div id="OF">
-               <h1>Best Of Electronics</h1>
-            </div>
-            <div id="Bestel">
-            <div >
-               <div id="headphone">
-                  <img src="https://rukminim1.flixcart.com/image/210/210/l58iaa80/headphone/k/z/m/nord-buds-ce-oneplus-original-imagfyk4hyvgg6ze.jpeg?q=80" media="(min-width: 1192px)" style="margin-top: 20px;">
-               <h6>Best Truewireless Headphone</h6>
-               <div><h5>Grab Now</h5></div>
-               </div>
-            </div>
-            <div>
-               <div id="shavers">
-                  <img src="https://rukminim1.flixcart.com/image/210/210/kactpjk0/shaver/m/6/z/philips-s1121-45-s1121-45-original-imafry2qgxcwnm9r.jpeg?q=80">
-                  <h6>Best Of Shavers</h6>
-               <div><h5>From ₹1,649</h5></div>
-               </div>
-               </div>
-               <div>
-                  <div id="speaker">
-                     <img src="https://rukminim1.flixcart.com/image/210/210/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=80">
-                     <h6>Best Selling Mobile speaker</h6>
-                  <div><h5>From ₹499</h5></div>
+               <div id="ad4">
+                  <img src="https://cdn.i.haymarketmedia.asia/?n=campaign-india%2Fcontent%2Fgoyalbillio.jpg&h=570&w=855&q=100&v=20170226&c=1" alt="">
                   </div>
                </div>
-               <div>
-                  <div id="printer">
-                     <img src="https://rukminim1.flixcart.com/image/210/210/k0bbb0w0pkrrdj/printer-refurbished/k/g/j/b-ink-tank-l130-epson-original-imafk8ffzjkgefyf.jpeg?q=80">
-                     <h6>Printers</h6>
-                  <div><h5>From ₹10999</h5></div>
-                  </div>
-               </div>
-               <div>
-                  <div id="Moniter">
-                     <img src="https://rukminim1.flixcart.com/image/210/210/xif0q/monitor/n/r/g/-original-imagyr8vrpzzgrac.jpeg?q=80">
-                     <h6>Monitor</h6>
-                  <div><h5>From ₹8279</h5></div>
-                  </div>
-               </div>
-            </div>
-            </div>
-         </div>
-      </div>
-   </section>
+		</div>
+	</section>
+	
 </body>
 </html>
