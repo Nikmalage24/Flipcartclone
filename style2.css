@@ -291,30 +291,140 @@ body{
    margin-top: 8px;
 }
 
-#secSize{
-   background-color: white;
-   width: 375px;
-   height: 80.8vh;
-   margin-left: 8px;
-   margin-right: 8px;
-   margin-bottom: 8px;
-   padding-left: 20px;
+.info{
+   padding: 30px;
+  color: #878787;
+  background-color: #f5f5f5;
 }
 
-#sec{
-   display: flex;
-   gap: 10px;
+#info1{
+   color: #666;
+   background-color: #f5f5f5;
+   margin: 0 auto;
+   text-align: left;
+   padding: 25px;
+   line-height: 1.5;
+   font-size: 12px;
+}
+
+#tops{
+   color: #565656;
+   font-family: inter_semi_bold,fallback-inter_semi_bold,Arial,sans-serif;
+   margin-top: 14px;
+   padding: 14px 0;
+   font-size: 16px;
+}
+
+#tops a{
+   text-decoration: none;
+   color: #565656;
+}
+
+#tops h1{
+   font-size: 16px;
    margin-bottom: 10px;
 }
 
-.secBorder{
-   display: flex;
-   flex-direction: column;
-   width: 156px;
-   height: 220px;
-   border: 0.4px solid #e0e0e0;
-   border-radius: 4px;
-   font-size: 13px;
-
+.mostSearch{
+   margin: 4px 0;
 }
 
+.mostSearch span{
+   color: #565656;
+   text-transform: uppercase;
+   margin-right: 4px;
+   font-size: 14px;
+}
+
+.mostSearch a{
+   cursor: pointer;
+   text-decoration: none;
+   color: #565656;
+   border-right: 1px solid #333;
+   padding: 0 5px;
+   font-size: 12px;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  padding: 40px 60px 0;
+  column-gap: 20px;
+  background-color: #171717;
+}
+
+.footerstyle{
+   color: #878787;
+   font-size: 12px;
+   margin-bottom: 12px;
+}
+
+.footerstyle a{
+   font-family: Arial,sans-serif;
+   font-size: 12px;
+   color: #fff;
+   display: block;
+}
+
+.footerstyle p{
+   color: #fff;
+   font-size: 12px;
+   margin: 0px;
+}
+
+.marginTop{
+   margin-top: 10px;
+}
+
+a{
+   text-decoration: none;
+}
+
+.mail{
+   border-left: 1px solid #454d5e;
+   padding-left: 32px;
+   color: #878787;
+   font-size: 12px;
+   margin-bottom: 12px;
+}
+
+.mail p{
+   color: #fff;
+   font-size: 12px;
+   margin: 0px;
+}
+
+#social{
+   margin-top: 10px;
+}
+
+#social a{
+   margin-right: 16px;
+   margin-top: 10px;
+}
+
+ .endfooter{
+   border-top: 1px solid #454d5e;
+   padding: 25px 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: #171717;
+}
+
+.efoot{
+   display: flex;
+   align-items: center;
+}
+
+.efoot a{
+   margin-left: 8px;
+   font-size: 12px;
+   line-height: 18px;
+   color: white;
+}
+
+#OFFERS,#offer1{
+   display: flex;
+}
